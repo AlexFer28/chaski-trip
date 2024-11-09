@@ -1,84 +1,91 @@
 
 export type TypePlace = 'park' | 'beach' | 'mountain' | 'city' | 'country' | 'other';
 
+import webp1 from '/places/1.webp';
+import webp2 from '/places/2.webp';
+import webp3 from '/places/3.webp';
+import webp4 from '/places/4.webp';
+import webp5 from '/places/5.webp';
+import webp6 from '/places/6.webp';
+
 export const lugares = [
-    {
-        id: 1,
-        description: 'Arequipa',
-        img: '/places/1.webp',
-        stars: 5,
-        visits: 76,
-        type: 'park' as TypePlace,
-        price: 'S/1,200',
-        position: [-16.4090, -71.5375],
-        distance: 0,
-    },
-    {
-        id: 2,
-        description: 'Puno',
-        img: '/places/2.webp',
-        stars: 12,
-        visits: 76,
-        type: 'park' as TypePlace,
-        price: 'S/1,200',
-        position: [-15.8402, -70.0219],
-        distance: 0,
-    },
-    {
-        id: 3,
-        description: 'Cajamarca',
-        img: '/places/3.webp',
-        stars: 12,
-        visits: 76,
-        type: 'park' as TypePlace,
-        price: 'S/1,200',
-        position: [-7.1630, -78.5003],
-        distance: 0,
-    },
-    {
-        id: 4,
-        description: 'Amazonas',
-        img: '/places/4.webp',
-        stars: 0,
-        visits: 76,
-        type: 'park' as TypePlace,
-        price: 'S/1,200',
-        position: [-5.1197, -78.3525],
-        distance: 0,
-    },
-    {
-        id: 5,
-        description: 'San Martin',
-        img: '/places/5.webp',
-        stars: 4.5,
-        visits: 76,
-        type: 'mountain' as TypePlace,
-        price: 'S/1,200',
-        position: [-6.4874, -76.4406],
-        distance: 0,
-    },
-    {
-        id: 6,
-        description: 'Lambayeque',
-        img: '/places/6.webp',
-        stars: 4.5,
-        visits: 76,
-        type: 'beach' as TypePlace,
-        price: 'S/1,200',
-        position: [-6.7011, -79.9076],
-        distance: 0,
-    },
+  {
+    id: 1,
+    description: 'Arequipa',
+    img: webp1,
+    stars: 5,
+    visits: 76,
+    type: 'park' as TypePlace,
+    price: 'S/1,200',
+    position: [-16.4090, -71.5375],
+    distance: 0,
+  },
+  {
+    id: 2,
+    description: 'Puno',
+    img: webp2,
+    stars: 12,
+    visits: 76,
+    type: 'park' as TypePlace,
+    price: 'S/1,200',
+    position: [-15.8402, -70.0219],
+    distance: 0,
+  },
+  {
+    id: 3,
+    description: 'Cajamarca',
+    img: webp3,
+    stars: 12,
+    visits: 76,
+    type: 'park' as TypePlace,
+    price: 'S/1,200',
+    position: [-7.1630, -78.5003],
+    distance: 0,
+  },
+  {
+    id: 4,
+    description: 'Amazonas',
+    img: webp4,
+    stars: 0,
+    visits: 76,
+    type: 'park' as TypePlace,
+    price: 'S/1,200',
+    position: [-5.1197, -78.3525],
+    distance: 0,
+  },
+  {
+    id: 5,
+    description: 'San Martin',
+    img: webp5,
+    stars: 4.5,
+    visits: 76,
+    type: 'mountain' as TypePlace,
+    price: 'S/1,200',
+    position: [-6.4874, -76.4406],
+    distance: 0,
+  },
+  {
+    id: 6,
+    description: 'Lambayeque',
+    img: webp6,
+    stars: 4.5,
+    visits: 76,
+    type: 'beach' as TypePlace,
+    price: 'S/1,200',
+    position: [-6.7011, -79.9076],
+    distance: 0,
+  },
 ];
 
 export const rutas = [
-    {
-        id: 1,
-        name: 'Asociación de Turismo Vivencial Grupo Pumachiri',
-        logo: null,
-        stars: 4.5,
-        visits: 76,
-        places: [1],
-        description: `<div>
+  {
+    id: 1,
+    name: 'Asociación de Turismo Vivencial Grupo Pumachiri',
+    logo: null,
+    stars: 4.5,
+    visits: 76,
+    places: [1],
+    description: `<div>
   <h2>Asociación de Turismo Vivencial Grupo Pumachiri</h2>
   <p>
     La Asociación de Turismo Vivencial Grupo Pumachiri es una organización dedicada a ofrecer experiencias de turismo vivencial en el pintoresco pueblo de Coporaque, ubicado en el Valle del Colca, provincia de Caylloma, región Arequipa. Fundada el 1 de septiembre de 2009, la asociación ha trabajado desde 2008 en brindar a los visitantes una estadía auténtica y enriquecedora, gracias al apoyo de las ONGs "Cooperation Saint Erblon/Villages des Andes" y "Pachamama Chukinkuna".
@@ -132,15 +139,15 @@ export const rutas = [
     La Asociación de Turismo Vivencial Grupo Pumachiri invita a los viajeros a descubrir Coporaque, un lugar que combina historia, naturaleza y tradiciones vivas, ofreciendo una experiencia única en el corazón del Valle del Colca.
   </p>
 </div>`
-    },
-    {
-        id: 2,
-        name: 'Tarapoto Tropical',
-        logo: null,
-        stars: 4.5,
-        visits: 76,
-        places: [5],
-        description: `<div>
+  },
+  {
+    id: 2,
+    name: 'Tarapoto Tropical',
+    logo: null,
+    stars: 4.5,
+    visits: 76,
+    places: [5],
+    description: `<div>
   <h2>Tarapoto Tropical</h2>
   <p>
     Disfruta de una experiencia inolvidable en Tarapoto Tropical, donde la selva, cascadas y el sol te esperan. Conecta con la naturaleza en su máximo esplendor y vive aventuras mágicas en la región de San Martín.
@@ -218,5 +225,5 @@ export const rutas = [
     <li>Niños hasta 3 años no pagan; desde 4 años, tarifa completa.</li>
   </ul>
 </div>`,
-    },
+  },
 ]
