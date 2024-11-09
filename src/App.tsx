@@ -48,7 +48,7 @@ function App() {
         {/* </div> */}
       </Content>
       <Footer style={{ textAlign: 'center' }}>
-        CorAll D&R ©{new Date().getFullYear()} Created by MaxterJ.asm
+        ChaskiTrip©{new Date().getFullYear()} Created by Alex Urtercho.asm
       </Footer>
     </Layout>
   )
