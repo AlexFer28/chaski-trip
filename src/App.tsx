@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import logo from './assets/logo.jpeg';
 import CardsMap from './pages/cards-map';
 
-
 const { Header, Content, Footer } = Layout;
 
 function App() {

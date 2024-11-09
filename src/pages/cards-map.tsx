@@ -4,6 +4,7 @@ import { Button, Card, Col, Empty, Modal, Row, Tabs, Tag, Tooltip } from 'antd';
 import L from 'leaflet';
 import { useEffect, useRef, useState } from 'react';
 import { lugares, rutas } from '../core/datos';
+import 'leaflet/dist/images/marker-shadow.png'
 
 //Jsx
 const renderDescription = (description: string) => {
@@ -27,7 +28,6 @@ const calcularDistanciaKm = (lat1: number, lon1: number, lat2: number, lon2: num
 const deg2rad = (deg: number) => {
     return deg * (Math.PI / 180)
 }
-
 
 const getColorTag = (n: number) => {
     const colors = ['magenta', 'blue', 'green', 'yellow', 'orange', 'red']
