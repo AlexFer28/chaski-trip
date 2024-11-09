@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Chaski Trip 🚗
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chaski Trip 🚗 es una aplicación web para planificar viajes en el Peru.
 
-Currently, two official plugins are available:
+## 🚀 Inicio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📦 Instalación
 
-## Expanding the ESLint configuration
+1. Clonar el repositorio
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/AlexFer28/chaski-trip.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Instalar dependencias
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+bun install
 ```
+
+3. Iniciar el servidor de desarrollo
+
+```bash
+bun dev
+```
+
+4. Abrir la aplicación en el navegador
+
+```bash
+open http://localhost:5173
+```
+
+### 📝 Contribuir
+
+1. Fork el repositorio
+2. Crear una rama con tu nombre
+3. Hacer los cambios necesarios
+4. Commitear los cambios
+5. Crear un pull request
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia MIT. Para más información, consulta el archivo [LICENSE](LICENSE).  
+
+## 📝 Autor
+
+Alex Fernández 👨‍💻
